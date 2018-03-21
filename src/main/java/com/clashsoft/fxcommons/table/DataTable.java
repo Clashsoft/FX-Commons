@@ -14,7 +14,7 @@ public class DataTable
 			final TableRow<T> row = new TableRow<>();
 			row.setOnMouseClicked(event -> {
 				final T item = row.getItem();
-				if (item != null && event.getClickCount() >= 1)
+				if (item != null && event.getClickCount() >= 2)
 				{
 					open.accept(item);
 				}
